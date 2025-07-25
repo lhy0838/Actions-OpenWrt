@@ -14,5 +14,11 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# 您之前的 helloworld 和 passwall 可以根据需要保留或删除。
+# 如果您只想要 turboacc，可以注释掉它们或删除。
+# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# 添加 luci-app-turboacc 仓库
+# 这是编译 turboacc 插件所必需的。
+git clone https://github.com/chenmozhijin/turboacc.git package/turboacc
