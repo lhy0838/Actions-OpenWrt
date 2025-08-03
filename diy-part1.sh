@@ -22,3 +22,6 @@
 # 添加 luci-app-turboacc 仓库
 # 这是编译 turboacc 插件所必需的。
 git clone https://github.com/chenmozhijin/turboacc.git package/turboacc
+
+# Add a feed source for luci-app-lucky
+echo 'src-git lucky https://github.com/gdy666/luci-app-lucky.git' >> feeds.conf.default
